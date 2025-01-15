@@ -1,0 +1,21 @@
+.postsPage {
+  padding-top: var(--medium-small);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--medium-large);
+
+  .pageTitle {
+    font-weight: 400;
+    color: var(--dark_color);
+    font-size: var(--extra-large);
+    margin-bottom: var(--medium);
+  }
+
+  .postsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-large);
+  }
+}

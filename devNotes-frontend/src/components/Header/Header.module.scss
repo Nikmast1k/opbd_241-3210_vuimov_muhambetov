@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  padding: 32px 60px 24px 60px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border_color_secondary);
+
+  button {
+    color: var(--dark_color);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+  }
+}
