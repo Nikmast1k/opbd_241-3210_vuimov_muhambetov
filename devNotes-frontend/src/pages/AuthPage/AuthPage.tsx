@@ -28,11 +28,11 @@ const AuthPage: FC = () => {
         if (account && account.password === signInPassword) {
             localStorage.setItem('isLoggedIn', 'true');
             window.location.reload();
+        } else {
+            alert('Аккаунт не найден. Пожалуйста, попробуйте еще раз');
+            setSignInEmail('');
+            setSignInPassword('');   
         }
-
-        alert('Аккаунт не найден. Пожалуйста, попробуйте еще раз');
-        setSignInEmail('');
-        setSignInPassword('');
     };
 
     return (
